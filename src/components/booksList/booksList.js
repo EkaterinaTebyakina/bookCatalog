@@ -92,7 +92,7 @@ const BooksList = (props) => {
                 //if there are several such books, we randomly choose one of them
                 if (map.get(maxRating).length > 1) {
 
-                    let randomID = Math.floor(Math.random() * (recBooks.length - 1));
+                    let randomID = Math.round(Math.random() * (recBooks.length - 1));
                     return [recBooks[randomID]];
 
                 } else {

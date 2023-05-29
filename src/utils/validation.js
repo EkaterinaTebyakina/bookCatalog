@@ -5,11 +5,17 @@ export const SignupSchema = Yup.object().shape({
         .max(100, 'Название слишком длинное!')
         .required('Обязательное поле!'),
     publicationYear: Yup.number()
+        .integer()
         .min(1800, 'Пожалуйста, выберите год не раньше 1800!')
-        .max(new Date().getFullYear(), 'Этот год еще не наступил!'),
+        .max(new Date().getFullYear(), 'Этот год еще не наступил!')
+        .nullable(true)
+        .transform((_, val) => val === Number(val) ? val : null),
     rating: Yup.number()
+        .integer()
         .min(0, "Рейтинг не может быть меньше 0!")
-        .max(10, "Рейтинг не может быть больше 10!"),
+        .max(10, "Рейтинг не может быть больше 10!")
+        .nullable(true)
+        .transform((_, val) => val === Number(val) ? val : null),
     ISBN: Yup.string()
         .max(21, "Длина ISBN не может быть больше 21 символа!"),
     firstAuthor: Yup.string()

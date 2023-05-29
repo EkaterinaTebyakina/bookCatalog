@@ -124,7 +124,7 @@ const AddBook = (props) => {
                     value={props.values.ISBN}
                 />
                 {props.errors.ISBN && props.touched.ISBN ? (<div>{props.errors.ISBN}</div>) : null}
-                <button type="submit"  className="addBtn">Submit</button>
+                <button type="submit"  className="addBtn">Добавить</button>
                 </form>
             )}
             </Formik>
