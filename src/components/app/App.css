@@ -1,0 +1,43 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+}
+
+.app {
+  max-width: 1200px;
+}
+
+.addBook{
+  width: 65%;
+}
+
+.bookList{
+  width: 80%;
+}
+
+/* 1000px */
+@media only screen and (max-width: 1200px) {
+  .addBook {
+      width: 90%;
+      
+  }
+  .bookList {
+    width: 90%;
+  }
+}
+
+/* 600px */
+@media only screen and (max-width: 600px) {
+  .addBook {
+      width: 100%;
+  }
+  .bookList {
+    width: 100%;
+}
+}

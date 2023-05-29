@@ -1,0 +1,59 @@
+.books__list {
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.groupBooks {
+    list-style: none;
+    padding: 0;
+}
+
+.groupBooks li {
+    hyphens: auto;
+    font-family: "Trebuchet MS", "Lucida Sans";
+    padding: 7px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-left: 10px solid #8bc63e; 
+    box-shadow: 2px -2px 5px 0 rgba(0,0,0,.1),
+         -2px -2px 5px 0 rgba(0,0,0,.1),
+        2px 2px 5px 0 rgba(0,0,0,.1),
+        -2px 2px 5px 0 rgba(0,0,0,.1);
+    font-size: 18px;
+    letter-spacing: 2px;
+    transition: 0.3s all linear;
+    }
+    .groupBooks li{border-color: #8bc63e;}
+    .groupBooks li:hover {border-left: 10px solid #fcba30;}
+
+    .groupBooks li span {
+        font-weight: 600;
+        font-size: 18px;
+    }
+    .groupBooks li div {
+        overflow-wrap: break-word;
+        hyphens: auto;
+    }
+    
+.pointOfList span {
+    font-family: "Trebuchet MS", "Lucida Sans";
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.deleteBtn {
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+    width: 140px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: #8bc63e;
+    border-radius: 4px;
+}
+
+.deleteBtn:hover {
+    background-color: #fcba30;
+    cursor: pointer;
+}
