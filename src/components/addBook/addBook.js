@@ -22,14 +22,15 @@ const AddBook = (props) => {
                 delete values.firstAuthor;
                 if (values.ISBN === '') delete values.ISBN;
 
-                setBook(values);
-                props.onBookAdded();
+                setBook(values)
+
+                values.authors = []
+                props.onBookAdded()
+                actions.resetForm();
                 
                 actions.setSubmitting(false);
                 }, 1000);
-                values.authors = []
-
-                actions.resetForm();
+            
                 
             }}
             >
