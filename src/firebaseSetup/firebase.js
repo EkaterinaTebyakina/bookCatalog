@@ -6,12 +6,7 @@ import { getFirestore } from "@firebase/firestore"
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCjUYhlLBnvG5Mws7i0tWzKL13WyvofUxI",
-  authDomain: "bookcatalog-ba43b.firebaseapp.com",
-  projectId: "bookcatalog-ba43b",
-  storageBucket: "bookcatalog-ba43b.appspot.com",
-  messagingSenderId: "750998121479",
-  appId: "1:750998121479:web:dab28429fc275f7dfbcea2"
+  
 };
 
 // Initialize Firebase
